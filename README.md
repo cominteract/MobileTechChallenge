@@ -58,7 +58,7 @@ Libraries Used
   * [Koin][15] A pragmatic lightweight dependency injection framework for Kotlin developers
   * [Kotlin Coroutines][16] for managing background threads with simplified code and reducing needs for callbacks
   * [Retrofit][17] A pragmatic lightweight dependency injection framework for Kotlin developers
-
+  * [Lottie][18] Lottie is a mobile library for Android and iOS that parses Adobe After Effects animations exported as json with Bodymovin and renders them natively on mobile!
 
 Design Patterns used
 -------
@@ -91,6 +91,7 @@ Observer pattern is used in notifying whether the movie results already exist. i
 [15]: https://insert-koin.io/
 [16]: https://kotlinlang.org/docs/reference/coroutines-overview.html
 [17]: https://square.github.io/retrofit/
+[18]: https://github.com/airbnb/lottie-android
 
 
 
