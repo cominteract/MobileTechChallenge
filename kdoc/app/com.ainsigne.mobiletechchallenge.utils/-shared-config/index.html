@@ -1,0 +1,63 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SharedConfig - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.ainsigne.mobiletechchallenge.utils</a>&nbsp;/&nbsp;<a href="./index.html">SharedConfig</a><br/>
+<br/>
+<h1>SharedConfig</h1>
+<code><span class="keyword">class </span><span class="identifier">SharedConfig</span></code>
+<p>Config for saving preferences</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">SharedConfig</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.utils.SharedConfig$<init>(android.content.SharedPreferences)/sharedPreferences">sharedPreferences</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/SharedPreferences.html"><span class="identifier">SharedPreferences</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="search-key.html">searchKey</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">searchKey</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p>Search key for saving searched queries</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get-last-searched.html">getLastSearched</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getLastSearched</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code>
+<p>gets the last searched query to be queried when returning</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="save-last-searched.html">saveLastSearched</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">saveLastSearched</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.utils.SharedConfig$saveLastSearched(kotlin.String)/searched">searched</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>saves the last searched query to return to its last state</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

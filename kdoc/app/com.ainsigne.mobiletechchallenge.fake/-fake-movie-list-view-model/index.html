@@ -1,0 +1,119 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>FakeMovieListViewModel - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.ainsigne.mobiletechchallenge.fake</a>&nbsp;/&nbsp;<a href="./index.html">FakeMovieListViewModel</a><br/>
+<br/>
+<h1>FakeMovieListViewModel</h1>
+<code><span class="keyword">class </span><span class="identifier">FakeMovieListViewModel</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewModel</span></code>
+<p>View model to observe movie results and recent movies retrieval</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">FakeMovieListViewModel</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.fake.FakeMovieListViewModel$<init>(com.ainsigne.mobiletechchallenge.fake.FakeMovieListRepository)/repo">repo</span><span class="symbol">:</span>&nbsp;<a href="../-fake-movie-list-repository/index.html"><span class="identifier">FakeMovieListRepository</span></a><span class="symbol">)</span></code>
+<p>View model to observe movie results and recent movies retrieval</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="movie-results.html">movieResults</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">movieResults</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code>
+<p>Fake data for all movie results currently added as value</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="mutable-live-data.html">mutableLiveData</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">mutableLiveData</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.ainsigne.mobiletechchallenge.model/-movie-d-b-result/index.html"><span class="identifier">MovieDBResult</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>Fake data for all movie results currently added</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="clear-observers.html">clearObservers</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">clearObservers</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Clears the observers before making a fresh search for a new query</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="fetch-movies.html">fetchMovies</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">fetchMovies</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.fake.FakeMovieListViewModel$fetchMovies(kotlin.String, kotlin.String)/query">query</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.ainsigne.mobiletechchallenge.fake.FakeMovieListViewModel$fetchMovies(kotlin.String, kotlin.String)/page">page</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Fetch movies when data is not available yet</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-error.html">getError</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getError</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">&gt;</span></code>
+<p>Get error status</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-movie-recents.html">getMovieRecents</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getMovieRecents</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.fake.FakeMovieListViewModel$getMovieRecents(kotlin.String)/searched">searched</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.ainsigne.mobiletechchallenge.model/-movie-recent/index.html"><span class="identifier">MovieRecent</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>Get fake movie recents</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-movie-results.html">getMovieResults</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getMovieResults</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.fake.FakeMovieListViewModel$getMovieResults(kotlin.String, kotlin.String, kotlin.String)/query">query</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.ainsigne.mobiletechchallenge.fake.FakeMovieListViewModel$getMovieResults(kotlin.String, kotlin.String, kotlin.String)/page">page</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.ainsigne.mobiletechchallenge.fake.FakeMovieListViewModel$getMovieResults(kotlin.String, kotlin.String, kotlin.String)/previous">previous</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../com.ainsigne.mobiletechchallenge.model/-movie-d-b-result/index.html"><span class="identifier">MovieDBResult</span></a><span class="symbol">&gt;</span></code>
+<p>Retrieves the fake results</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-movie-results-list.html">getMovieResultsList</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getMovieResultsList</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.fake.FakeMovieListViewModel$getMovieResultsList(kotlin.String, kotlin.String, kotlin.String, androidx.lifecycle.Lifecycle)/query">query</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.ainsigne.mobiletechchallenge.fake.FakeMovieListViewModel$getMovieResultsList(kotlin.String, kotlin.String, kotlin.String, androidx.lifecycle.Lifecycle)/page">page</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.ainsigne.mobiletechchallenge.fake.FakeMovieListViewModel$getMovieResultsList(kotlin.String, kotlin.String, kotlin.String, androidx.lifecycle.Lifecycle)/previous">previous</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.ainsigne.mobiletechchallenge.fake.FakeMovieListViewModel$getMovieResultsList(kotlin.String, kotlin.String, kotlin.String, androidx.lifecycle.Lifecycle)/lifecycle">lifecycle</span><span class="symbol">:</span>&nbsp;<span class="identifier">Lifecycle</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.ainsigne.mobiletechchallenge.model/-movie-d-b-result/index.html"><span class="identifier">MovieDBResult</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>Retrieves the fake results</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="observer.html">observer</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">observer</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.fake.FakeMovieListViewModel$observer(kotlin.String, kotlin.String)/query">query</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.ainsigne.mobiletechchallenge.fake.FakeMovieListViewModel$observer(kotlin.String, kotlin.String)/page">page</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Observer</span><span class="symbol">&lt;</span><a href="../../com.ainsigne.mobiletechchallenge.model/-movie-d-b-result/index.html"><span class="identifier">MovieDBResult</span></a><span class="symbol">&gt;</span></code>
+<p>Observer to be added for custom paging</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

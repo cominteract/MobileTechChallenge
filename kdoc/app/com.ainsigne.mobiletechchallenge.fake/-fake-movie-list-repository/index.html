@@ -1,0 +1,209 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>FakeMovieListRepository - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.ainsigne.mobiletechchallenge.fake</a>&nbsp;/&nbsp;<a href="./index.html">FakeMovieListRepository</a><br/>
+<br/>
+<h1>FakeMovieListRepository</h1>
+<code><span class="keyword">class </span><span class="identifier">FakeMovieListRepository</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../com.ainsigne.mobiletechchallenge.interfaces/-movies-repository/index.html"><span class="identifier">MoviesRepository</span></a></code>
+<p>Repository to retrieve fake search results from the query inputted</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">FakeMovieListRepository</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>Repository to retrieve fake search results from the query inputted</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="all-movie-results.html">allMovieResults</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">allMovieResults</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.ainsigne.mobiletechchallenge.model/-movie-d-b-result/index.html"><span class="identifier">MovieDBResult</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>Fake data for all movie results currently added</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="movie-recents.html">movieRecents</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">movieRecents</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.ainsigne.mobiletechchallenge.model/-movie-recent/index.html"><span class="identifier">MovieRecent</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>Fake data for recent searched queries</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="movie-result.html">movieResult</a></p>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">movieResult</span><span class="symbol">: </span><a href="../../com.ainsigne.mobiletechchallenge.model/-movie-d-b-result/index.html"><span class="identifier">MovieDBResult</span></a></code>
+<p>Fake results being retrieved</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="movie-results.html">movieResults</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">movieResults</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="../../com.ainsigne.mobiletechchallenge.model/-movie-d-b-result/index.html"><span class="identifier">MovieDBResult</span></a><span class="symbol">&gt;</span></code>
+<p>Fake data for movie results retrieved</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="movie-search.html">movieSearch</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">movieSearch</span><span class="symbol">: </span><span class="identifier">MutableLiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.ainsigne.mobiletechchallenge.model/-search/index.html"><span class="identifier">Search</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>Fake data for movies searched</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="page-to-be-added.html">pageToBeAdded</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">pageToBeAdded</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p>Fake page to identify the fetched response</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="query-to-be-added.html">queryToBeAdded</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">queryToBeAdded</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p>Fake query to identify the fetched response</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="recents.html">recents</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">recents</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code>
+<p>Fake data for recent searched queries as value</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="response.html">response</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">response</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p>Fake response to be added when initialized</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="response-to-be-added.html">responseToBeAdded</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">responseToBeAdded</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p>Fake response to be added when fetched</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="results.html">results</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">results</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code>
+<p>Fake data for all movie results currently added as value</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="searches.html">searches</a></p>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">searches</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.ainsigne.mobiletechchallenge.model/-search/index.html"><span class="identifier">Search</span></a><span class="symbol">&gt;</span></code>
+<p>Fake movie search list being retrieved</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="create-movie-recents.html">createMovieRecents</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">createMovieRecents</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.fake.FakeMovieListRepository$createMovieRecents(com.ainsigne.mobiletechchallenge.model.MovieRecent)/movieRecent">movieRecent</span><span class="symbol">:</span>&nbsp;<a href="../../com.ainsigne.mobiletechchallenge.model/-movie-recent/index.html"><span class="identifier">MovieRecent</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Creates fake movie recents</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="create-movie-results.html">createMovieResults</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">createMovieResults</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.fake.FakeMovieListRepository$createMovieResults(com.ainsigne.mobiletechchallenge.model.MovieDBResult)/movieResults">movieResults</span><span class="symbol">:</span>&nbsp;<a href="../../com.ainsigne.mobiletechchallenge.model/-movie-d-b-result/index.html"><span class="identifier">MovieDBResult</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Creates the fake movie results</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="fetch-movies.html">fetchMovies</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">fetchMovies</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.fake.FakeMovieListRepository$fetchMovies(kotlin.String, kotlin.String)/query">query</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.ainsigne.mobiletechchallenge.fake.FakeMovieListRepository$fetchMovies(kotlin.String, kotlin.String)/page">page</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Handles fetching of movies to be updated constantly</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-error.html">getError</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getError</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">&gt;</span></code>
+<p>Error handling for when there is no results</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-movie-results.html">getMovieResults</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getMovieResults</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.fake.FakeMovieListRepository$getMovieResults(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../com.ainsigne.mobiletechchallenge.model/-movie-d-b-result/index.html"><span class="identifier">MovieDBResult</span></a><span class="symbol">&gt;</span></code>
+<p>Retrieves the fake results</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-movies.html">getMovies</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getMovies</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.fake.FakeMovieListRepository$getMovies(kotlin.String, kotlin.String)/query">query</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.ainsigne.mobiletechchallenge.fake.FakeMovieListRepository$getMovies(kotlin.String, kotlin.String)/page">page</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.ainsigne.mobiletechchallenge.model/-search/index.html"><span class="identifier">Search</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>Retrieves the fake movies</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-recents.html">getRecents</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getRecents</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.fake.FakeMovieListRepository$getRecents(kotlin.String)/searched">searched</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.ainsigne.mobiletechchallenge.model/-movie-recent/index.html"><span class="identifier">MovieRecent</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>Retrieves the fake recents</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

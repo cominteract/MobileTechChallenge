@@ -1,0 +1,14 @@
+$dokka.format:html
+$dokka.linkExtension:html
+
+com.ainsigne.mobiletechchallenge
+com.ainsigne.mobiletechchallenge.api
+com.ainsigne.mobiletechchallenge.data
+com.ainsigne.mobiletechchallenge.di
+com.ainsigne.mobiletechchallenge.fake
+com.ainsigne.mobiletechchallenge.interfaces
+com.ainsigne.mobiletechchallenge.model
+com.ainsigne.mobiletechchallenge.ui
+com.ainsigne.mobiletechchallenge.ui.adapter
+com.ainsigne.mobiletechchallenge.utils
+com.ainsigne.mobiletechchallenge.viewmodel

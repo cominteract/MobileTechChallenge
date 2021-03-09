@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MovieDao - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.ainsigne.mobiletechchallenge.data</a>&nbsp;/&nbsp;<a href="./index.html">MovieDao</a><br/>
+<br/>
+<h1>MovieDao</h1>
+<code><span class="keyword">interface </span><span class="identifier">MovieDao</span></code>
+<p><a href="./index.html">MovieDao</a> Dao for caching movie list</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="create-movies.html">createMovies</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">createMovies</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.data.MovieDao$createMovies(kotlin.collections.List((com.ainsigne.mobiletechchallenge.model.Search)))/movies">movies</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.ainsigne.mobiletechchallenge.model/-search/index.html"><span class="identifier">Search</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Cache movies from a search results</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-all-movies.html">getAllMovies</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getAllMovies</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.ainsigne.mobiletechchallenge.model/-search/index.html"><span class="identifier">Search</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>Get all movies from search results cached</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>OmdbService - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.ainsigne.mobiletechchallenge.api</a>&nbsp;/&nbsp;<a href="./index.html">OmdbService</a><br/>
+<br/>
+<h1>OmdbService</h1>
+<code><span class="keyword">interface </span><span class="identifier">OmdbService</span></code>
+<p><a href="./index.html">OmdbService</a> Service for the api calls on the OMDBAPI</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get-movie-detail-d-b-by-id.html">getMovieDetailDBById</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getMovieDetailDBById</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.api.OmdbService$getMovieDetailDBById(kotlin.String, kotlin.String, kotlin.String)/i">i</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.ainsigne.mobiletechchallenge.api.OmdbService$getMovieDetailDBById(kotlin.String, kotlin.String, kotlin.String)/apikey">apikey</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.ainsigne.mobiletechchallenge.api.OmdbService$getMovieDetailDBById(kotlin.String, kotlin.String, kotlin.String)/plot">plot</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Response</span><span class="symbol">&lt;</span><a href="../../com.ainsigne.mobiletechchallenge.model/-movie-details-d-b/index.html"><span class="identifier">MovieDetailsDB</span></a><span class="symbol">&gt;</span></code>
+<p>Fetch the movie details by its imdb id</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="search-movie-d-b-by-title-with-page.html">searchMovieDBByTitleWithPage</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">searchMovieDBByTitleWithPage</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.api.OmdbService$searchMovieDBByTitleWithPage(kotlin.String, kotlin.String, kotlin.String, kotlin.String)/s">s</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.ainsigne.mobiletechchallenge.api.OmdbService$searchMovieDBByTitleWithPage(kotlin.String, kotlin.String, kotlin.String, kotlin.String)/page">page</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.ainsigne.mobiletechchallenge.api.OmdbService$searchMovieDBByTitleWithPage(kotlin.String, kotlin.String, kotlin.String, kotlin.String)/type">type</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.ainsigne.mobiletechchallenge.api.OmdbService$searchMovieDBByTitleWithPage(kotlin.String, kotlin.String, kotlin.String, kotlin.String)/apikey">apikey</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Response</span><span class="symbol">&lt;</span><a href="../../com.ainsigne.mobiletechchallenge.model/-movie-d-b-result/index.html"><span class="identifier">MovieDBResult</span></a><span class="symbol">&gt;</span></code>
+<p>Fetch search results for movies based on a query</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

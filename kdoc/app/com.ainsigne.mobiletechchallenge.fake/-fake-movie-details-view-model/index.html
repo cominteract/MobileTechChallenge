@@ -1,0 +1,51 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>FakeMovieDetailsViewModel - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.ainsigne.mobiletechchallenge.fake</a>&nbsp;/&nbsp;<a href="./index.html">FakeMovieDetailsViewModel</a><br/>
+<br/>
+<h1>FakeMovieDetailsViewModel</h1>
+<code><span class="keyword">class </span><span class="identifier">FakeMovieDetailsViewModel</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewModel</span></code>
+<p>view model to observe movie details retrieval</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">FakeMovieDetailsViewModel</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.fake.FakeMovieDetailsViewModel$<init>(com.ainsigne.mobiletechchallenge.fake.FakeMovieDetailsRepository)/repo">repo</span><span class="symbol">:</span>&nbsp;<a href="../-fake-movie-details-repository/index.html"><span class="identifier">FakeMovieDetailsRepository</span></a><span class="symbol">)</span></code>
+<p>view model to observe movie details retrieval</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="fetch-movie-details.html">fetchMovieDetails</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">fetchMovieDetails</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.fake.FakeMovieDetailsViewModel$fetchMovieDetails(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>fetch movie details when data is not available yet</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-movie-details.html">getMovieDetails</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getMovieDetails</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.fake.FakeMovieDetailsViewModel$getMovieDetails(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../com.ainsigne.mobiletechchallenge.model/-movie-details-d-b/index.html"><span class="identifier">MovieDetailsDB</span></a><span class="symbol">&gt;</span></code>
+<p>retrieves the movie details already cached</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

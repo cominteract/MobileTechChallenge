@@ -1,0 +1,191 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MovieListActivity - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.ainsigne.mobiletechchallenge.ui</a>&nbsp;/&nbsp;<a href="./index.html">MovieListActivity</a><br/>
+<br/>
+<h1>MovieListActivity</h1>
+<code><span class="keyword">class </span><span class="identifier">MovieListActivity</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">AppCompatActivity</span></code>
+<p><a href="./index.html">MovieListActivity</a> Movie list page for displaying movie list from searched query</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">MovieListActivity</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p><a href="./index.html">MovieListActivity</a> Movie list page for displaying movie list from searched query</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="adapter.html">adapter</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">adapter</span><span class="symbol">: </span><a href="../../com.ainsigne.mobiletechchallenge.ui.adapter/-movie-adapter/index.html"><span class="identifier">MovieAdapter</span></a><span class="symbol">?</span></code>
+<p>Movie Adapter for displaying movie list returned from query as <a href="../../com.ainsigne.mobiletechchallenge.ui.adapter/-movie-adapter/index.html">MovieAdapter</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="all-results.html">allResults</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">allResults</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code>
+<p>Data for all movie results currently added as value as <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a> of <a href="../../com.ainsigne.mobiletechchallenge.model/-movie-d-b-result/index.html">MovieDBResult</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="all-searches.html">allSearches</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">allSearches</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code>
+<p>Movie search list being retrieved as <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a> of <a href="../../com.ainsigne.mobiletechchallenge.model/-search/index.html">Search</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="binding.html">binding</a></p>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">binding</span><span class="symbol">: </span><span class="identifier">ActivityMovieListBinding</span></code>
+<p>binding as <a href="#">ActivityMovieListBinding</a> to bind the views</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="config.html">config</a></p>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">config</span><span class="symbol">: </span><a href="../../com.ainsigne.mobiletechchallenge.utils/-shared-config/index.html"><span class="identifier">SharedConfig</span></a></code>
+<p>Config for saving preferences as <a href="../../com.ainsigne.mobiletechchallenge.utils/-shared-config/index.html">SharedConfig</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="current-page.html">currentPage</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">currentPage</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
+<p>currentPage as <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>  to identify which page is already loaded</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="loading.html">loading</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">loading</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
+<p>loading as <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a> to identify whether it is loading more movies</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="past-visibles-items.html">pastVisiblesItems</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">pastVisiblesItems</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
+<p>past visible items count as <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="previous-page.html">previousPage</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">previousPage</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
+<p>previousPage as <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a> to identify which is the previous page based on its current page</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="recent-adapter.html">recentAdapter</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">recentAdapter</span><span class="symbol">: </span><a href="../../com.ainsigne.mobiletechchallenge.ui.adapter/-movie-recent-adapter/index.html"><span class="identifier">MovieRecentAdapter</span></a><span class="symbol">?</span></code>
+<p>Movie Recent Adapter for as <a href="../../com.ainsigne.mobiletechchallenge.ui.adapter/-movie-recent-adapter/index.html">MovieRecentAdapter</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="search-query.html">searchQuery</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">searchQuery</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p>searchQuery as <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> for the search query</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="total-item-count.html">totalItemCount</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">totalItemCount</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
+<p>total items count as <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="visible-item-count.html">visibleItemCount</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">visibleItemCount</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
+<p>visible items count as <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get-screen-width.html">getScreenWidth</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getScreenWidth</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.ui.MovieListActivity$getScreenWidth(android.app.Activity)/activity">activity</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/app/Activity.html"><span class="identifier">Activity</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
+<p>get screen width for the app as <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="hide-keyboard-from.html">hideKeyboardFrom</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">hideKeyboardFrom</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.ui.MovieListActivity$hideKeyboardFrom(android.content.Context, android.view.View)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">, </span><span class="identifier" id="com.ainsigne.mobiletechchallenge.ui.MovieListActivity$hideKeyboardFrom(android.content.Context, android.view.View)/view">view</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/View.html"><span class="identifier">View</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>hide keyboard when search is already done</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-create.html">onCreate</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCreate</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.ui.MovieListActivity$onCreate(android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Setup view binding on create</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-resume.html">onResume</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onResume</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Hide recent searched list on resume</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

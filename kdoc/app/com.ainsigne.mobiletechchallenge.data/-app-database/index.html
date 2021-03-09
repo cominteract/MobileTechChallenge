@@ -1,0 +1,60 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AppDatabase - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.ainsigne.mobiletechchallenge.data</a>&nbsp;/&nbsp;<a href="./index.html">AppDatabase</a><br/>
+<br/>
+<h1>AppDatabase</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">AppDatabase</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">RoomDatabase</span></code>
+<p><a href="./index.html">AppDatabase</a> The Room database for this app</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">AppDatabase</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p><a href="./index.html">AppDatabase</a> The Room database for this app</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="movie-dao.html">movieDao</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">movieDao</span><span class="symbol">: </span><a href="../-movie-dao/index.html"><span class="identifier">MovieDao</span></a></code>
+<p>Dao for caching movie list</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="movie-details-dao.html">movieDetailsDao</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">movieDetailsDao</span><span class="symbol">: </span><a href="../-movie-details-dao/index.html"><span class="identifier">MovieDetailsDao</span></a></code>
+<p>Dao for caching movie details</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="movie-results-dao.html">movieResultsDao</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">movieResultsDao</span><span class="symbol">: </span><a href="../-movie-results-dao/index.html"><span class="identifier">MovieResultsDao</span></a></code>
+<p>Dao for caching movie results and recents</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

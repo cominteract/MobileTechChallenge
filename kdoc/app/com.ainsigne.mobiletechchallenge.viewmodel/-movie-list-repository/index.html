@@ -1,0 +1,126 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MovieListRepository - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.ainsigne.mobiletechchallenge.viewmodel</a>&nbsp;/&nbsp;<a href="./index.html">MovieListRepository</a><br/>
+<br/>
+<h1>MovieListRepository</h1>
+<code><span class="keyword">class </span><span class="identifier">MovieListRepository</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../com.ainsigne.mobiletechchallenge.interfaces/-movies-repository/index.html"><span class="identifier">MoviesRepository</span></a></code>
+<p>Repository to retrieve search results from the query inputted</p>
+<h3>Parameters</h3>
+<p><a name="movieDao"></a>
+<code>movieDao</code> - as <a href="../../com.ainsigne.mobiletechchallenge.data/-movie-dao/index.html">MovieDao</a></p>
+<p><a name="movieResultsDao"></a>
+<code>movieResultsDao</code> - as <a href="../../com.ainsigne.mobiletechchallenge.data/-movie-results-dao/index.html">MovieResultsDao</a></p>
+<p><a name="service"></a>
+<code>service</code> - as <a href="../../com.ainsigne.mobiletechchallenge.api/-omdb-service/index.html">OmdbService</a></p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">MovieListRepository</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.viewmodel.MovieListRepository$<init>(com.ainsigne.mobiletechchallenge.data.MovieDao, com.ainsigne.mobiletechchallenge.data.MovieResultsDao, com.ainsigne.mobiletechchallenge.api.OmdbService)/movieDao">movieDao</span><span class="symbol">:</span>&nbsp;<a href="../../com.ainsigne.mobiletechchallenge.data/-movie-dao/index.html"><span class="identifier">MovieDao</span></a><span class="symbol">, </span><span class="identifier" id="com.ainsigne.mobiletechchallenge.viewmodel.MovieListRepository$<init>(com.ainsigne.mobiletechchallenge.data.MovieDao, com.ainsigne.mobiletechchallenge.data.MovieResultsDao, com.ainsigne.mobiletechchallenge.api.OmdbService)/movieResultsDao">movieResultsDao</span><span class="symbol">:</span>&nbsp;<a href="../../com.ainsigne.mobiletechchallenge.data/-movie-results-dao/index.html"><span class="identifier">MovieResultsDao</span></a><span class="symbol">, </span><span class="identifier" id="com.ainsigne.mobiletechchallenge.viewmodel.MovieListRepository$<init>(com.ainsigne.mobiletechchallenge.data.MovieDao, com.ainsigne.mobiletechchallenge.data.MovieResultsDao, com.ainsigne.mobiletechchallenge.api.OmdbService)/service">service</span><span class="symbol">:</span>&nbsp;<a href="../../com.ainsigne.mobiletechchallenge.api/-omdb-service/index.html"><span class="identifier">OmdbService</span></a><span class="symbol">)</span></code>
+<p>Repository to retrieve search results from the query inputted</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="movie-dao.html">movieDao</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">movieDao</span><span class="symbol">: </span><a href="../../com.ainsigne.mobiletechchallenge.data/-movie-dao/index.html"><span class="identifier">MovieDao</span></a></code>
+<p>as <a href="../../com.ainsigne.mobiletechchallenge.data/-movie-dao/index.html">MovieDao</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="movie-results-dao.html">movieResultsDao</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">movieResultsDao</span><span class="symbol">: </span><a href="../../com.ainsigne.mobiletechchallenge.data/-movie-results-dao/index.html"><span class="identifier">MovieResultsDao</span></a></code>
+<p>as <a href="../../com.ainsigne.mobiletechchallenge.data/-movie-results-dao/index.html">MovieResultsDao</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="create-movie-recents.html">createMovieRecents</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">createMovieRecents</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.viewmodel.MovieListRepository$createMovieRecents(com.ainsigne.mobiletechchallenge.model.MovieRecent)/movieRecent">movieRecent</span><span class="symbol">:</span>&nbsp;<a href="../../com.ainsigne.mobiletechchallenge.model/-movie-recent/index.html"><span class="identifier">MovieRecent</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>creates movie recents to be cache locally</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="create-movie-results.html">createMovieResults</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">createMovieResults</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.viewmodel.MovieListRepository$createMovieResults(com.ainsigne.mobiletechchallenge.model.MovieDBResult)/movieResults">movieResults</span><span class="symbol">:</span>&nbsp;<a href="../../com.ainsigne.mobiletechchallenge.model/-movie-d-b-result/index.html"><span class="identifier">MovieDBResult</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>creates the movie results to be cache locally</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="fetch-movies.html">fetchMovies</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">fetchMovies</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.viewmodel.MovieListRepository$fetchMovies(kotlin.String, kotlin.String)/query">query</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.ainsigne.mobiletechchallenge.viewmodel.MovieListRepository$fetchMovies(kotlin.String, kotlin.String)/page">page</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>handles fetching of movies to be updated constantly</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-error.html">getError</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getError</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">&gt;</span></code>
+<p>error handling for when there is no results</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-movie-results.html">getMovieResults</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getMovieResults</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.viewmodel.MovieListRepository$getMovieResults(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../com.ainsigne.mobiletechchallenge.model/-movie-d-b-result/index.html"><span class="identifier">MovieDBResult</span></a><span class="symbol">&gt;</span></code>
+<p>retrieves the results already cached</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-movies.html">getMovies</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getMovies</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.viewmodel.MovieListRepository$getMovies(kotlin.String, kotlin.String)/query">query</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.ainsigne.mobiletechchallenge.viewmodel.MovieListRepository$getMovies(kotlin.String, kotlin.String)/page">page</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.ainsigne.mobiletechchallenge.model/-search/index.html"><span class="identifier">Search</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>retrieves the movies already cached from query</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-recents.html">getRecents</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getRecents</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.viewmodel.MovieListRepository$getRecents(kotlin.String)/searched">searched</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.ainsigne.mobiletechchallenge.model/-movie-recent/index.html"><span class="identifier">MovieRecent</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>retrieves the recents already cached</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

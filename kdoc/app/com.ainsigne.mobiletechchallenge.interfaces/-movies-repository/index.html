@@ -1,0 +1,105 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MoviesRepository - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.ainsigne.mobiletechchallenge.interfaces</a>&nbsp;/&nbsp;<a href="./index.html">MoviesRepository</a><br/>
+<br/>
+<h1>MoviesRepository</h1>
+<code><span class="keyword">interface </span><span class="identifier">MoviesRepository</span></code>
+<p>Repository to retrieve search results from the query inputted</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="create-movie-recents.html">createMovieRecents</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">createMovieRecents</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.interfaces.MoviesRepository$createMovieRecents(com.ainsigne.mobiletechchallenge.model.MovieRecent)/movieRecent">movieRecent</span><span class="symbol">:</span>&nbsp;<a href="../../com.ainsigne.mobiletechchallenge.model/-movie-recent/index.html"><span class="identifier">MovieRecent</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Creates movie recents to be cache locally</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="create-movie-results.html">createMovieResults</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">createMovieResults</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.interfaces.MoviesRepository$createMovieResults(com.ainsigne.mobiletechchallenge.model.MovieDBResult)/movieResults">movieResults</span><span class="symbol">:</span>&nbsp;<a href="../../com.ainsigne.mobiletechchallenge.model/-movie-d-b-result/index.html"><span class="identifier">MovieDBResult</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Creates the movie results to be cache locally</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="fetch-movies.html">fetchMovies</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">fetchMovies</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.interfaces.MoviesRepository$fetchMovies(kotlin.String, kotlin.String)/query">query</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.ainsigne.mobiletechchallenge.interfaces.MoviesRepository$fetchMovies(kotlin.String, kotlin.String)/page">page</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Handles fetching of movies to be updated constantly</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-error.html">getError</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getError</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">&gt;</span></code>
+<p>Error handling for when there is no results</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-movie-results.html">getMovieResults</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getMovieResults</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.interfaces.MoviesRepository$getMovieResults(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../com.ainsigne.mobiletechchallenge.model/-movie-d-b-result/index.html"><span class="identifier">MovieDBResult</span></a><span class="symbol">&gt;</span></code>
+<p>Retrieves the results already cached</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-movies.html">getMovies</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getMovies</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.interfaces.MoviesRepository$getMovies(kotlin.String, kotlin.String)/query">query</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.ainsigne.mobiletechchallenge.interfaces.MoviesRepository$getMovies(kotlin.String, kotlin.String)/page">page</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.ainsigne.mobiletechchallenge.model/-search/index.html"><span class="identifier">Search</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>Retrieves the movies already cached from query</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-recents.html">getRecents</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getRecents</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.interfaces.MoviesRepository$getRecents(kotlin.String)/searched">searched</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.ainsigne.mobiletechchallenge.model/-movie-recent/index.html"><span class="identifier">MovieRecent</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>Retrieves the recents already cached</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../../com.ainsigne.mobiletechchallenge.fake/-fake-movie-list-repository/index.html">FakeMovieListRepository</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">FakeMovieListRepository</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">MoviesRepository</span></a></code>
+<p>Repository to retrieve fake search results from the query inputted</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../com.ainsigne.mobiletechchallenge.viewmodel/-movie-list-repository/index.html">MovieListRepository</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">MovieListRepository</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">MoviesRepository</span></a></code>
+<p>Repository to retrieve search results from the query inputted</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

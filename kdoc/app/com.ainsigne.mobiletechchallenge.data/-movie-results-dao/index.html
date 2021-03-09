@@ -1,0 +1,57 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MovieResultsDao - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.ainsigne.mobiletechchallenge.data</a>&nbsp;/&nbsp;<a href="./index.html">MovieResultsDao</a><br/>
+<br/>
+<h1>MovieResultsDao</h1>
+<code><span class="keyword">interface </span><span class="identifier">MovieResultsDao</span></code>
+<p><a href="./index.html">MovieResultsDao</a> Dao for caching movie results and recents</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="create-movie-recent.html">createMovieRecent</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">createMovieRecent</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.data.MovieResultsDao$createMovieRecent(com.ainsigne.mobiletechchallenge.model.MovieRecent)/movieRecent">movieRecent</span><span class="symbol">:</span>&nbsp;<a href="../../com.ainsigne.mobiletechchallenge.model/-movie-recent/index.html"><span class="identifier">MovieRecent</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code>
+<p>Create movie recents cached from each query</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="create-movie-results.html">createMovieResults</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">createMovieResults</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.data.MovieResultsDao$createMovieResults(com.ainsigne.mobiletechchallenge.model.MovieDBResult)/movieDBResult">movieDBResult</span><span class="symbol">:</span>&nbsp;<a href="../../com.ainsigne.mobiletechchallenge.model/-movie-d-b-result/index.html"><span class="identifier">MovieDBResult</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code>
+<p>Create movie results cached from each query</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-movie-results.html">getMovieResults</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getMovieResults</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../com.ainsigne.mobiletechchallenge.model/-movie-d-b-result/index.html"><span class="identifier">MovieDBResult</span></a><span class="symbol">&gt;</span></code>
+<p>Get movie results from searched queries</p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getMovieResults</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.data.MovieResultsDao$getMovieResults(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../com.ainsigne.mobiletechchallenge.model/-movie-d-b-result/index.html"><span class="identifier">MovieDBResult</span></a><span class="symbol">&gt;</span></code>
+<p>Get movie results from its id</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-recents.html">getRecents</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getRecents</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.data.MovieResultsDao$getRecents(kotlin.String)/searched">searched</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.ainsigne.mobiletechchallenge.model/-movie-recent/index.html"><span class="identifier">MovieRecent</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>Get recently searched queries</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

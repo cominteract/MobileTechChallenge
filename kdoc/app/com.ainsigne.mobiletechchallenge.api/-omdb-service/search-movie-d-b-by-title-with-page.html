@@ -1,0 +1,22 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>OmdbService.searchMovieDBByTitleWithPage - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.ainsigne.mobiletechchallenge.api</a>&nbsp;/&nbsp;<a href="index.html">OmdbService</a>&nbsp;/&nbsp;<a href="./search-movie-d-b-by-title-with-page.html">searchMovieDBByTitleWithPage</a><br/>
+<br/>
+<h1>searchMovieDBByTitleWithPage</h1>
+<a name="com.ainsigne.mobiletechchallenge.api.OmdbService$searchMovieDBByTitleWithPage(kotlin.String, kotlin.String, kotlin.String, kotlin.String)"></a>
+<code><span class="identifier">@GET</span><span class="symbol">(</span>"."<span class="symbol">)</span> <span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">searchMovieDBByTitleWithPage</span><span class="symbol">(</span><span class="identifier">@Query</span><span class="symbol">(</span>"s"<span class="symbol">)</span> <span class="identifier" id="com.ainsigne.mobiletechchallenge.api.OmdbService$searchMovieDBByTitleWithPage(kotlin.String, kotlin.String, kotlin.String, kotlin.String)/s">s</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier">@Query</span><span class="symbol">(</span>"page"<span class="symbol">)</span> <span class="identifier" id="com.ainsigne.mobiletechchallenge.api.OmdbService$searchMovieDBByTitleWithPage(kotlin.String, kotlin.String, kotlin.String, kotlin.String)/page">page</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier">@Query</span><span class="symbol">(</span>"type"<span class="symbol">)</span> <span class="identifier" id="com.ainsigne.mobiletechchallenge.api.OmdbService$searchMovieDBByTitleWithPage(kotlin.String, kotlin.String, kotlin.String, kotlin.String)/type">type</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier">@Query</span><span class="symbol">(</span>"apikey"<span class="symbol">)</span> <span class="identifier" id="com.ainsigne.mobiletechchallenge.api.OmdbService$searchMovieDBByTitleWithPage(kotlin.String, kotlin.String, kotlin.String, kotlin.String)/apikey">apikey</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Response</span><span class="symbol">&lt;</span><a href="../../com.ainsigne.mobiletechchallenge.model/-movie-d-b-result/index.html"><span class="identifier">MovieDBResult</span></a><span class="symbol">&gt;</span></code>
+<p>Fetch search results for movies based on a query</p>
+<h3>Parameters</h3>
+<p><a name="s"></a>
+<code>s</code> - as String the search query to filter the movies to be included</p>
+<p><a name="page"></a>
+<code>page</code> - as String the page to indicate which result group for the search query to be included</p>
+<p><a name="apikey"></a>
+<code>apikey</code> - as String the api key to authorize api calls</p>
+</BODY>
+</HTML>

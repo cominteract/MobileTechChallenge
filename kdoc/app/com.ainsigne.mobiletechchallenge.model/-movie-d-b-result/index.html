@@ -1,0 +1,69 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MovieDBResult - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.ainsigne.mobiletechchallenge.model</a>&nbsp;/&nbsp;<a href="./index.html">MovieDBResult</a><br/>
+<br/>
+<h1>MovieDBResult</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">MovieDBResult</span></code>
+<p>movie results model for caching all results from every query made</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">MovieDBResult</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.model.MovieDBResult$<init>(kotlin.String, kotlin.collections.List((com.ainsigne.mobiletechchallenge.model.Search)), kotlin.String, kotlin.Boolean)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.ainsigne.mobiletechchallenge.model.MovieDBResult$<init>(kotlin.String, kotlin.collections.List((com.ainsigne.mobiletechchallenge.model.Search)), kotlin.String, kotlin.Boolean)/Search">Search</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-search/index.html"><span class="identifier">Search</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="com.ainsigne.mobiletechchallenge.model.MovieDBResult$<init>(kotlin.String, kotlin.collections.List((com.ainsigne.mobiletechchallenge.model.Search)), kotlin.String, kotlin.Boolean)/totalResults">totalResults</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.ainsigne.mobiletechchallenge.model.MovieDBResult$<init>(kotlin.String, kotlin.collections.List((com.ainsigne.mobiletechchallenge.model.Search)), kotlin.String, kotlin.Boolean)/Response">Response</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span></code>
+<p>movie results model for caching all results from every query made</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-response.html">Response</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">Response</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
+<p>Response as <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a> whether the response is valid</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-search.html">Search</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">Search</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-search/index.html"><span class="identifier">Search</span></a><span class="symbol">&gt;</span></code>
+<p>Search as <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a> of <a href="../-search/index.html">Search</a> the movie list from the the results after query</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="id.html">id</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">id</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p>id as <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> the query and page id to identify the searched query</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="total-results.html">totalResults</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">totalResults</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p>totalResults as <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> number of results for the query</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

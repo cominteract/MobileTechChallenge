@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MobileTechChallenge</string>
+    <string name="title_activity_movie_dashboard">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_moviedetails_list">MoviesDashboard</string>
+    <string name="title_moviedetails_detail">MovieDetails Detail</string>
+    <string name="title_movie_list">Movie</string>
+    <string name="title_movie_detail">Movie Detail</string>
+
+
+    <string name="search_results">Search results for \"%s\"</string>
+    <string name="search_movies">Search movies</string>
+    <string name="movie_year">Year : %s</string>
+    <string name="movie_actors">Actor(s) : %s</string>
+    <string name="movie_language">Language(s) : %s</string>
+    <string name="movie_duration">Duration : %s</string>
+
+</resources>

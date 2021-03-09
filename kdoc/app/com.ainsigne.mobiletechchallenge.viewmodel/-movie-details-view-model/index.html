@@ -1,0 +1,51 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MovieDetailsViewModel - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.ainsigne.mobiletechchallenge.viewmodel</a>&nbsp;/&nbsp;<a href="./index.html">MovieDetailsViewModel</a><br/>
+<br/>
+<h1>MovieDetailsViewModel</h1>
+<code><span class="keyword">class </span><span class="identifier">MovieDetailsViewModel</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewModel</span></code>
+<p>View model to observe movie details retrieval</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">MovieDetailsViewModel</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.viewmodel.MovieDetailsViewModel$<init>(com.ainsigne.mobiletechchallenge.viewmodel.MovieDetailsRepository)/repo">repo</span><span class="symbol">:</span>&nbsp;<a href="../-movie-details-repository/index.html"><span class="identifier">MovieDetailsRepository</span></a><span class="symbol">)</span></code>
+<p>View model to observe movie details retrieval</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="fetch-movie-details.html">fetchMovieDetails</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">fetchMovieDetails</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.viewmodel.MovieDetailsViewModel$fetchMovieDetails(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>fetch movie details when data is not available yet</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-movie-details.html">getMovieDetails</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getMovieDetails</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.viewmodel.MovieDetailsViewModel$getMovieDetails(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../com.ainsigne.mobiletechchallenge.model/-movie-details-d-b/index.html"><span class="identifier">MovieDetailsDB</span></a><span class="symbol">&gt;</span></code>
+<p>retrieves the movie details already cached</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

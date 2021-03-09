@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MovieDetailsDao - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.ainsigne.mobiletechchallenge.data</a>&nbsp;/&nbsp;<a href="./index.html">MovieDetailsDao</a><br/>
+<br/>
+<h1>MovieDetailsDao</h1>
+<code><span class="keyword">interface </span><span class="identifier">MovieDetailsDao</span></code>
+<p><a href="./index.html">MovieDetailsDao</a> Dao for caching movie details</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="create-movie-details.html">createMovieDetails</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">createMovieDetails</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.data.MovieDetailsDao$createMovieDetails(com.ainsigne.mobiletechchallenge.model.MovieDetailsDB)/movieDetailsDB">movieDetailsDB</span><span class="symbol">:</span>&nbsp;<a href="../../com.ainsigne.mobiletechchallenge.model/-movie-details-d-b/index.html"><span class="identifier">MovieDetailsDB</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code>
+<p>Create movie details to be cached</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-movie-details-from-id.html">getMovieDetailsFromId</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getMovieDetailsFromId</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.data.MovieDetailsDao$getMovieDetailsFromId(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../com.ainsigne.mobiletechchallenge.model/-movie-details-d-b/index.html"><span class="identifier">MovieDetailsDB</span></a><span class="symbol">&gt;</span></code>
+<p>Get movie details cached based on its id</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

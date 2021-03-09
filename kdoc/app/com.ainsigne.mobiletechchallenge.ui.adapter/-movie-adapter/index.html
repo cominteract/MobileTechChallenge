@@ -1,0 +1,99 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MovieAdapter - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.ainsigne.mobiletechchallenge.ui.adapter</a>&nbsp;/&nbsp;<a href="./index.html">MovieAdapter</a><br/>
+<br/>
+<h1>MovieAdapter</h1>
+<code><span class="keyword">class </span><span class="identifier">MovieAdapter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Adapter</span><span class="symbol">&lt;</span><a href="-movie-view-holder/index.html"><span class="identifier">MovieViewHolder</span></a><span class="symbol">&gt;</span></code>
+<p>Movie Adapter for displaying movie list returned from query as <a href="./index.html">MovieAdapter</a></p>
+<h3>Parameters</h3>
+<p><a name="items"></a>
+<code>items</code> - as <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a> of <a href="../../com.ainsigne.mobiletechchallenge.model/-search/index.html">Search</a> to populate the movie list</p>
+<p><a name="height"></a>
+<code>height</code> - as <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a> current screen height</p>
+<p><a name="onClick"></a>
+<code>onClick</code> - as <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a> callback when view is clicked</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-movie-view-holder/index.html">MovieViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">MovieViewHolder</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span><span class="symbol">, </span><a href="-view-holder-values/index.html"><span class="identifier">ViewHolderValues</span></a></code>
+<p><a href="-movie-view-holder/index.html">MovieViewHolder</a> for binding the views</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-view-holder-values/index.html">ViewHolderValues</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">ViewHolderValues</span></code>
+<p><a href="-view-holder-values/index.html">ViewHolderValues</a> for holding x and y position</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">MovieAdapter</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.ui.adapter.MovieAdapter$<init>(kotlin.collections.List((com.ainsigne.mobiletechchallenge.model.Search)), kotlin.Int, kotlin.Function2((com.ainsigne.mobiletechchallenge.ui.adapter.MovieAdapter.ViewHolderValues, com.ainsigne.mobiletechchallenge.model.Search, kotlin.Unit)))/items">items</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.ainsigne.mobiletechchallenge.model/-search/index.html"><span class="identifier">Search</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="com.ainsigne.mobiletechchallenge.ui.adapter.MovieAdapter$<init>(kotlin.collections.List((com.ainsigne.mobiletechchallenge.model.Search)), kotlin.Int, kotlin.Function2((com.ainsigne.mobiletechchallenge.ui.adapter.MovieAdapter.ViewHolderValues, com.ainsigne.mobiletechchallenge.model.Search, kotlin.Unit)))/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">, </span><span class="identifier" id="com.ainsigne.mobiletechchallenge.ui.adapter.MovieAdapter$<init>(kotlin.collections.List((com.ainsigne.mobiletechchallenge.model.Search)), kotlin.Int, kotlin.Function2((com.ainsigne.mobiletechchallenge.ui.adapter.MovieAdapter.ViewHolderValues, com.ainsigne.mobiletechchallenge.model.Search, kotlin.Unit)))/onClick">onClick</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="-view-holder-values/index.html"><span class="identifier">ViewHolderValues</span></a><span class="symbol">,</span>&nbsp;<a href="../../com.ainsigne.mobiletechchallenge.model/-search/index.html"><span class="identifier">Search</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span></code>
+<p>Movie Adapter for displaying movie list returned from query as <a href="./index.html">MovieAdapter</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get-item-count.html">getItemCount</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getItemCount</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
+<p>Returns the number of movies</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-bind-view-holder.html">onBindViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onBindViewHolder</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.ui.adapter.MovieAdapter$onBindViewHolder(com.ainsigne.mobiletechchallenge.ui.adapter.MovieAdapter.MovieViewHolder, kotlin.Int)/holder">holder</span><span class="symbol">:</span>&nbsp;<a href="-movie-view-holder/index.html"><span class="identifier">MovieViewHolder</span></a><span class="symbol">, </span><span class="identifier" id="com.ainsigne.mobiletechchallenge.ui.adapter.MovieAdapter$onBindViewHolder(com.ainsigne.mobiletechchallenge.ui.adapter.MovieAdapter.MovieViewHolder, kotlin.Int)/position">position</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Binds the data to the view</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-create-view-holder.html">onCreateViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCreateViewHolder</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.ui.adapter.MovieAdapter$onCreateViewHolder(android.view.ViewGroup, kotlin.Int)/parent">parent</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/ViewGroup.html"><span class="identifier">ViewGroup</span></a><span class="symbol">, </span><span class="identifier" id="com.ainsigne.mobiletechchallenge.ui.adapter.MovieAdapter$onCreateViewHolder(android.view.ViewGroup, kotlin.Int)/viewType">viewType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-movie-view-holder/index.html"><span class="identifier">MovieViewHolder</span></a></code>
+<p>Setup the binding for the view holder</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="update-adapter.html">updateAdapter</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateAdapter</span><span class="symbol">(</span><span class="identifier" id="com.ainsigne.mobiletechchallenge.ui.adapter.MovieAdapter$updateAdapter(kotlin.collections.List((com.ainsigne.mobiletechchallenge.model.Search)))/items">items</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.ainsigne.mobiletechchallenge.model/-search/index.html"><span class="identifier">Search</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>updates the current populated list</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
