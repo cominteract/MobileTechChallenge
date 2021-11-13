@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "80991960665",
+    "project_id": "mobiletechchallenge",
+    "storage_bucket": "mobiletechchallenge.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:80991960665:android:8fd1d021f35ea40ab6fb48",
+        "android_client_info": {
+          "package_name": "com.ainsigne.mobiletechchallenge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "80991960665-bo0dgcbcflk8vsk9k5ss55r2crdb2pka.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDziVrpa8P5_Ivt2ytSl68ZNUmgwwJazqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "80991960665-bo0dgcbcflk8vsk9k5ss55r2crdb2pka.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
