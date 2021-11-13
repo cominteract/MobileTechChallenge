@@ -49,7 +49,8 @@ jobs:
       - run:
           name: Firebase app distribution
           command: |
-            firebase appdistribution:distribute "app/build/outputs/apk/debug/app-debug.apk" --app "1:80991960665:android:8fd1d021f35ea40ab6fb48" --release-notes "Release notes here" --token "1//0epk-oR--x0vICgYIARAAGA4SNwF-L9IreMKoe35UOGxU7HPnlLvQm7fBSSnhCKjZqHiw1r8ht4Kq EMrXHijLwhrLMliOkgw-B-g"
+            firebase appdistribution:distribute "app/build/outputs/apk/debug/app-debug.apk" --app "1:80991960665:android:8fd1d021f35ea40ab6fb48" --release-notes "Release notes here" --token "1//0esbhPkb2QivKCgYIARAAGA4SNwF-L9IrOcrWld9ymbfAHzD8AsXmWoTgT8Bev_2j9mIOu467Lfwl
+Wo8ey8LqXYAeqeAENBh6ZRE"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
